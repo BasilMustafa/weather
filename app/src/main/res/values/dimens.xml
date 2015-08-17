@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="global_spacing_1">8dp</dimen>
+    <dimen name="global_spacing_2">16dp</dimen>
+    <dimen name="global_spacing_3">24dp</dimen>
+    <dimen name="global_spacing_4">32dp</dimen>
+    <dimen name="global_spacing_5">40dp</dimen>
+    <dimen name="global_spacing_6">56dp</dimen>
+    <dimen name="global_spacing_7">88dp</dimen>
+
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="temperaturebar_height">160dp</dimen>
+    <dimen name="weatherbar_height">112dp</dimen>
+    
+
+
+
+</resources>

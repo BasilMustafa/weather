@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_forcast"
+            android:title="Forcast"
+            android:icon="@drawable/ic_calendar_today_grey600_24dp"/>
+        <item
+            android:id="@+id/nav_Today"
+            android:title="Today"
+            android:icon="@drawable/ic_white_balance_sunny_grey600_24dp"/>
+        </group>
+    </menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    <string-array name="length_units">
+        <item>Meter</item>
+        <item>Mile</item>
+    </string-array>
+    <string-array name="temperature_values">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    <string-array name="length_values">
+        <item>Meter</item>
+        <item>Mile</item>
+    </string-array>
+
+</resources>

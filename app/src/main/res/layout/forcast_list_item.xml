@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/global_spacing_7"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginEnd="@dimen/global_spacing_1"
+        android:layout_marginStart="@dimen/global_spacing_1"
+        android:layout_marginRight="@dimen/global_spacing_1"
+        android:layout_marginLeft="@dimen/global_spacing_1"
+        android:layout_marginTop="@dimen/global_spacing_2"
+        android:layout_width="@dimen/global_spacing_6"
+        android:layout_height="@dimen/global_spacing_6"
+        android:id="@+id/weather_icon"
+        android:background="@drawable/round"
+
+
+        />
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/weather_condition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_spacing_2"
+        android:layout_toRightOf="@id/weather_icon"
+
+        android:layout_toEndOf="@id/weather_icon"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+
+        />
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/weather_icon"
+        android:layout_toRightOf="@id/weather_icon"
+        android:layout_below="@id/weather_condition"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_marginBottom="@dimen/global_spacing_2"
+        />
+
+
+
+    
+
+</RelativeLayout>

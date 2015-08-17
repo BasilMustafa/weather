@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196f3</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+    <style name="AppTheme.TextView.TodayTe2mperatureTheme" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">112sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="AppTheme.TextView.CityNameStyle" parent="Base.TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item>
+            
+    </style>
+    <style name="AppTheme.TextView.WeatherConditionStyle" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,149 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/today_fragment"
+    >
+ <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0sp"
+    android:layout_weight="1"
+    tools:context="com.dnsoftware.android.fragment.TodayWeatherFragment">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/today_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:alpha="50"
+        android:background="?attr/colorPrimary"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/temperaturebar_height"
+        android:layout_gravity="bottom"
+        >
+    <TextView
+        android:id="@+id/today_city_name"
+        style="@style/AppTheme.TextView.CityNameStyle"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_spacing_2"
+        android:layout_marginStart="@dimen/global_spacing_2"
+        android:gravity="center"
+        />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="invisible"
+                android:id="@+id/today_weather_icon"
+                android:layout_width="@dimen/global_spacing_4"
+                android:layout_height="@dimen/global_spacing_4"
+                android:layout_below="@id/today_city_name"
+                android:layout_marginLeft="@dimen/global_spacing_2"
+                android:layout_marginStart="@dimen/global_spacing_2"
+                android:background="@drawable/round_bg_gray"/>
+            <TextView
+                android:id="@+id/today_weather_condition"
+                style="@style/AppTheme.TextView.WeatherConditionStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/global_spacing_4"
+                android:layout_alignTop="@id/today_weather_icon"
+                android:layout_marginLeft="@dimen/global_spacing_1"
+                android:layout_marginStart="@dimen/global_spacing_1"
+                android:layout_toEndOf="@id/today_weather_icon"
+                android:layout_toRightOf="@id/today_weather_icon"
+                android:gravity="center_vertical"
+
+
+                />
+
+        <TextView
+
+            android:id="@+id/today_temperature"
+            style="@style/AppTheme.TextView.TodayTe2mperatureTheme"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/global_spacing_2"
+            android:layout_marginRight="@dimen/global_spacing_2"
+
+
+
+
+            />
+    </RelativeLayout>
+
+</FrameLayout>
+
+    <TableLayout
+        android:layout_marginLeft="@dimen/global_spacing_2"
+        android:layout_marginStart="@dimen/global_spacing_2"
+        android:layout_marginRight="@dimen/global_spacing_2"
+        android:layout_marginEnd="@dimen/global_spacing_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weatherbar_height"
+        android:orientation="horizontal">
+        <TableRow
+
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/humidity"
+                android:drawableLeft="@drawable/ic_weather_humidity"
+                android:drawableStart="@drawable/ic_weather_humidity"
+                android:layout_height="@dimen/global_spacing_6"
+
+
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/percipitation"
+                android:drawableLeft="@drawable/ic_weather_percipitation"
+                android:drawableStart="@drawable/ic_weather_percipitation"
+                android:layout_height="@dimen/global_spacing_6"
+                android:layout_width="0sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/pressure"
+                android:drawableLeft="@drawable/ic_weather_pressure"
+                android:drawableStart="@drawable/ic_weather_pressure"
+                android:layout_height="@dimen/global_spacing_6"
+                android:layout_width="0sp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/wind"
+                android:layout_height="@dimen/global_spacing_6"
+                android:drawableLeft="@drawable/ic_weather_wind"
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/direction"
+                android:layout_height="@dimen/global_spacing_6"
+                android:drawableLeft="@drawable/ic_weather_direction"
+                android:layout_width="0sp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"/>
+
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+</LinearLayout>
